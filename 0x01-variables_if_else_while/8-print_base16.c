@@ -1,20 +1,23 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return:0
+ *  main - Entery Point
+ *  Return: 0(Success)
  */
 int main(void)
 {
-	int i, y;
-	for (i = 0; i < 10; i++)
-	{
-		putchar (i + '0');
-	}
-	for (y = 'a'; y <= 'f'; y++)
-	{
-		putchar (y);
-	}
+  char a, b;
 
-putchar('\n');
-return (0);
+  b = '0';
+  while (b <= '9')
+  {
+    putchar(b);
+    b++;
+  }
+  for (a = 'a'; a <= 'f'; a++)
+  {
+    putchar(a);
+  }
+
+  putchar('\n');
+  return (0);
 }
