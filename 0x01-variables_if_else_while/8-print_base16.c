@@ -1,23 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- *  main - Entery Point
- *  Return: 0(Success)
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
  */
 int main(void)
 {
-  char a, b;
+	char d = '0';
 
-  b = '0';
-  while (b <= '9')
-  {
-    putchar(b);
-    b++;
-  }
-  for (a = 'a'; a <= 'f'; a++)
-  {
-    putchar(a);
-  }
+	while (d <= '9')
+	{
+		putchar(d);
+		d++;
+	}
 
-  putchar('\n');
-  return (0);
+	char c = 'a';
+
+	while (c <= 'f')
+	{
+		putchar(c);
+		c++;
+	}
+
+	putchar('\n');
+	return (0);
 }
